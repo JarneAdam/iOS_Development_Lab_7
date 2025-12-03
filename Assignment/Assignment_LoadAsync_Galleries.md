@@ -7,6 +7,8 @@
 
 ---
 
+Starter Files in [the Assignment_LoadAsync_Galleries_files directory](./Assignment_LoadAsync_Galleries_files/)
+
 ## 📋 Introduction
 
 In this assignment you will combine Tab navigation and navigation using a NavigationStack with Path. The data will be loaded using a **asynchronous data loading** in SwiftUI.
