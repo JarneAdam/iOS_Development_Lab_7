@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(AppData.self) private var appData
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            GalleriesView().tabItem {
+                Label("Galleries", systemImage: "building.columns")
+            }
+            GalleryDetailView().tabItem {
+                Label(appData.selectedGallery?.name ?? "No gallery", systemImage: "paintpalette")
+            }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
