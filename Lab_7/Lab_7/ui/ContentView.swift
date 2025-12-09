@@ -11,11 +11,11 @@ struct ContentView: View {
     @Environment(AppData.self) private var appData
     var body: some View {
         TabView {
-            GalleriesView().tabItem {
-                Label("Galleries", systemImage: "building.columns")
+            Tab("Galleries", systemImage: "building.columns"){
+                GalleriesView()
             }
-            GalleryDetailView().tabItem {
-                Label(appData.selectedGallery?.name ?? "No gallery", systemImage: "paintpalette")
+            Tab(appData.selectedGallery?.name ?? "No gallery", systemImage: "paintpalette"){
+                GalleryDetailView()
             }
         }
     }
