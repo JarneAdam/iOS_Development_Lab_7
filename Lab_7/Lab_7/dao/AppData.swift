@@ -51,8 +51,3 @@ class AppData {
         return artist
     }
 }
-
-enum Route: Hashable, Equatable{
-    case artist(Artist)
-    case artwork(Artwork)
-}
