@@ -24,7 +24,7 @@ struct ArtworkView: View {
                     if artist != nil {
                         appData.path.append(.artist(artist!))
                     }
-                }
+                }.padding(.leading)
             }
             Divider().overlay(.brown)
             Text("List of other art").foregroundStyle(.brown)
